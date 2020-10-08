@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".QuizActivity">
+
+    <TextView
+        android:id="@+id/viewScoreTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:freezesText="true"
+        android:text="Score: 0"
+        android:textColor="@android:color/black"
+        android:textSize="30sp"
+        />
+
+    <TextView
+        android:id="@+id/viewQuestionCountTV"
+        android:text="Question: 1/x"
+        android:textSize="20sp"
+        android:textColor="@android:color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:freezesText="true"/>
+    <TextView
+        android:id="@+id/categoryTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Category :"
+        android:layout_marginTop="10dp"
+        android:textSize="20sp"
+        android:freezesText="true"
+        android:textColor="@android:color/black"
+        />
+
+    <TextView
+        android:id="@+id/difficultyTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Difficulty :"
+        android:layout_marginTop="10dp"
+        android:textSize="20sp"
+        android:freezesText="true"
+        android:textColor="@android:color/black"
+        />
+
+    <TextView
+        android:id="@+id/viewTextCountdownTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="00 : 30"
+        android:textColor="@android:color/black"
+        android:textSize="45sp"
+        />
+
+    <TextView
+        android:id="@+id/viewQuestionTV"
+        android:layout_width="match_parent"
+        android:layout_height="78dp"
+        android:layout_marginTop="25dp"
+        android:gravity="center_horizontal"
+        android:text="Here will be the Question"
+        android:textColor="@android:color/black"
+        android:textSize="25sp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/radioBtn1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Option 1"
+                android:textColor="@android:color/black"
+                android:textSize="25sp"
+                android:freezesText="true"/>
+
+            <RadioButton
+                android:id="@+id/radioBtn2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Option 2"
+                android:textColor="@android:color/black"
+                android:textSize="25sp"
+                android:freezesText="true"/>
+
+            <RadioButton
+                android:id="@+id/radioBtn3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Option 3"
+                android:textColor="@android:color/black"
+                android:textSize="25sp"
+                android:freezesText="true"/>
+
+        </RadioGroup>
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+    <Button
+        android:id="@+id/confirmBtn"
+        android:text="Confirm"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:freezesText="true"/>
+
+</LinearLayout>
